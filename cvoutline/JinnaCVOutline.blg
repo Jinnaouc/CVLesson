@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: JinnaCVOutline.aux
+The style file: plain.bst
+Database file #1: JinnaCVOutline.bib.bib
+Warning--empty journal in FCAN
+Warning--empty year in FCAN
+You've used 19 entries,
+            2118 wiz_defined-function locations,
+            590 strings with 7598 characters,
+and the built_in function-call counts, 8481 in all, are:
+= -- 820
+> -- 477
+< -- 11
++ -- 188
+- -- 168
+* -- 578
+:= -- 1335
+add.period$ -- 58
+call.type$ -- 19
+change.case$ -- 141
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 338
+empty$ -- 587
+format.name$ -- 168
+if$ -- 1823
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 97
+num.names$ -- 38
+pop$ -- 171
+preamble$ -- 1
+purify$ -- 122
+quote$ -- 0
+skip$ -- 284
+stack$ -- 0
+substring$ -- 480
+swap$ -- 136
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 76
+warning$ -- 2
+while$ -- 69
+width$ -- 21
+write$ -- 203
+(There were 2 warnings)

@@ -1,0 +1,393 @@
+\documentclass[UTF8]{article}
+
+
+\usepackage[a4paper]{geometry}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\linespread{1.5}
+\usepackage{fancyhdr}
+\usepackage{fontspec}%å­äœåº
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode,xltxtra}
+\usepackage[BoldFont,SlantFont,CJKnumber,CJKchecksingle]{xeCJK}  
+\usepackage{CJKfntef}
+\usepackage{bm} 
+\usepackage{pifont}
+
+
+\usepackage{color,xcolor}
+\definecolor{GREEN}{RGB}{25,180,68}
+\definecolor{BLUE}{RGB}{9,148,234}
+\definecolor{DRED}{RGB}{128,0,0}
+\definecolor{GREY}{RGB}{128,128,128}
+\definecolor{PCOLOR}{RGB}{255,250,240}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{red}{rgb}{255,0,0}
+
+\usepackage{amsmath,amsfonts,amssymb}
+
+\setcounter{secnumdepth}{5} % 
+\setcounter{tocdepth}{4} % 
+\usepackage[americaninductors,europeanresistors]{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows,shadows,shapes,calc,mindmap,trees,backgrounds}  
+\usepackage{graphicx}
+\usepackage{subfigure} 
+
+\usepackage{colortbl,dcolumn}  
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+\titleformat
+{\section} 
+[display] 
+{\bfseries\Large} 
+{Chapter \thesection }
+{0.3ex} 
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-2ex}%
+\rule{\textwidth}{1pt}
+] % after-code
+
+\usepackage{mdwlist}
+\usepackage{verbatim}
+\usepackage{/Users/jinna/Desktop/study/github/Template/styles/zhfontcfg}%
+\usepackage{/Users/jinna/Desktop/study/github/Template/styles/visionouclistings}
+\usepackage{/Users/jinna/Desktop/study/github/Template/styles/visionouccfg}
+
+\setlength{\headheight}{15pt}
+
+\fancyhf{}
+
+%settings
+\setCJKmainfont{Adobe Kaiti Std} 
+\setCJKmonofont{Adobe Fangsong Std}
+
+\makeatletter
+\def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
+\hrule\@height 2.5pt \@width\headwidth\vskip1pt 
+\hrule\@height 0.5pt\@width\headwidth             
+\vskip-2\headrulewidth\vskip-1pt}             
+\vspace{6mm}}                
+\makeatother         
+\titleformat{\paragraph}[block]{\normalsize\bfseries}{\theparagraph}{1em}{}
+\graphicspath{{figures/}}
+\tikzset{
+    >=stealth',
+    punkt/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           text width=6.5em,
+           minimum height=2em,
+           text centered},
+    pil/.style={
+           ->,
+           thick,
+           shorten <=2pt,
+           shorten >=2pt,},
+    % Define style for FlyZhyBall
+    FlyZhyBall/.style={
+      circle,
+      minimum size=6mm,
+      inner sep=0.5pt,
+      ball color=red!50!blue,
+      text=white,},
+    % Define style for FlyZhyRectangle
+    FlyZhyRectangle/.style={
+      rectangle,
+      rounded corners,
+      minimum size=6mm,
+      ball color=red!50!blue,
+      text=white,},
+    % Define style for zhyfly
+    zhyfly/.style={
+      rectangle,
+      rounded corners,
+      minimum size=6mm,
+      ball color=red!25!blue,
+      text=white,},
+    % Define style for new rectangle
+    nrectangle/.style={
+      rectangle,
+      draw=#1!50,
+      fill=#1!20,
+      minimum size=5mm,
+      inner sep=0.1pt,}
+}
+
+\lstnewenvironment{VHDLcode}[1][]{%
+  \lstset{
+    basicstyle=\footnotesize\ttfamily\color{black},%
+    columns=flexible,%
+    framexleftmargin=.7mm,frame=shadowbox,%
+    rulesepcolor=\color{blue},%
+    backgroundcolor=\color{!20},%
+    xleftmargin=1.2\fboxsep,%
+    xrightmargin=.7\fboxsep,%
+    numberstyle=\tiny\color{blue},%
+    numberblanklines=false,numbersep=7pt,%
+    language=VHDL%
+    }\lstset{#1}}{}
+\lstnewenvironment{VHDLmiddle}[1][]{%
+  \lstset{
+    basicstyle=\scriptsize\ttfamily\color{black},%
+    columns=flexible,%
+    framexleftmargin=.7mm,frame=shadowbox,%
+    rulesepcolor=\color{blue},%
+%    frame=single,%
+    backgroundcolor=\color{green!20},%
+    xleftmargin=1.2\fboxsep,%
+    xrightmargin=.7\fboxsep,%
+    numbers=left,numberstyle=\tiny\color{blue},%
+    numberblanklines=false,numbersep=7pt,%
+    language=VHDL%
+    }\lstset{#1}}{}
+% pdf
+\hypersetup{pdfauthor={Haiyong Zheng},%
+            pdftitle={Title},%
+            CJKbookmarks=true,%
+            bookmarksnumbered=true,%
+            bookmarksopen=false,%
+            plainpages=false,%
+            colorlinks=true,%
+            citecolor=GREY,%
+            filecolor=magenta,%
+            linkcolor=DRED,%red(default)
+            urlcolor=cyan}
+\newcommand\titlebar{%
+\tikz[baseline,trim left=3.1cm,trim right=3cm] {
+    \fill [cyan!25] (2.5cm,-1ex) rectangle (\textwidth+3.1cm,2.5ex);
+    \node [
+        fill=cyan!60!white,
+        anchor= base east,
+        rounded rectangle,
+        minimum height=3.5ex] at (3cm,0) {
+        \textbf{\thesection.}
+    };
+}%
+}
+
+
+\lstset{
+ backgroundcolor=\color{white}, 
+ basicstyle = \footnotesize,       
+ breakatwhitespace = false,        
+ breaklines = true,                 
+ captionpos = b,                    
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,             
+ frame =shadowbox, 
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = C++,                     % the language of code
+ otherkeywords={string}, 
+ numbers=left, 
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},         
+ showspaces=false,  
+ showstringspaces=false, 
+ showtabs=false,    
+ stepnumber=1,         
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,          
+ title=\lstname                      
+}
+
+
+\usepackage{/Users/jinna/Desktop/study/github/Template/styles/lshort}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\bibliographystyle{plain}
+\begin{center}
+\textbf{\LARGE{CV课程提纲}} %æ é¢å é»å å€§å±äž­
+\end{center}
+
+\begin{center}
+Jinna Cui
+\end{center}
+
+\begin{center}
+2017.4.20
+\end{center}
+\pagenumbering{roman}
+%{\color{GREEN}{love }}
+%{\color{BLUE}{ love }}
+%{\color{DRED}{ love }}
+%{\color{GREY}{ love }}
+%{\color{mymauve}{ love }}
+%{\color{red}{ love }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{分类}
+\subsection{图像分类的定义}
+\subsection{数据集}
+图像分类常用的几个数据集: MNIST，CIFAR-10，Caltech-256，PASCAL VOC，ImageNet-1000，MS COCO，Google Open Images dataset. 
+\subsection{分类问题的评价指标}
+overall accuracy，Kappa系数，混淆矩阵，top-1 error，top-5 error
+\subsection{图像分类的过程}
+预处理 + 特征提取 + 特征表达 + 特征选择/降维 + 分类器
+\subsection{图像分类的方法}
+\subsubsection{传统机器学习方法}
+预处理：图像增强，图像复原，图像分割等
+
+特征提取：\textbf{SIFT}，SURF，\textbf{HOG}，LBP，FAST，LoG，DoG，
+
+特征表达：\textbf{Fisher向量}，\textbf{向量量化}，软量化，FMM，LCC
+
+特征选择：按搜索测量进行特征选择的方法，按评价准则进行特征选择的方法
+
+降维：PCA，LDA，LLE，特征哈希
+
+分类器：SVM，\textbf{K近邻}，随机森林，adaboost
+\subsubsection{传统机器学习方法的优点及存在的问题}
+\subsubsection{ 深度学习方法}
+\paragraph{CNN的优点}
+介绍卷积神经网络在分类问题上取得的成就，并对比模式识别课及人工神经网络课程学过的MLP来从卷积神经网络的结构上解释为何卷积神经网络更适合解决分类问题。
+
+{\color{red}{ Experiments: LeNet在MNIST数据集上训练，主要为引入卷积神经网络分类 }}
+\paragraph{CNN结构}
+进一步解释dropout层和softmax层对于分类问题的重要性（李娜会讲卷积层，pooling层的运算）以及卷积神经网络是如何实现从特征提取到分类的过程。
+
+{\color{red}{ Experiments: AlexNet在MNIST数据集和CIFAR-10数据集上的训练，重点观察AlexNet在分类问题上的提升，并对比有无dropout层来看dropout层对分类问题的重要性。}}
+\paragraph{典型CNN网络}
+结合几个典型的卷积神经网络（VGG，GoogLeNet，ResNet）来介绍卷积神经网络的发展趋势。
+
+{\color{red}{ Experiments: MNIST数据集和CIFAR-10数据集上训练AlexNet，VGG，ResNet的实验，并结合五个评价指标对比其结果}}
+
+\subsubsection{深度学习方法的优点及存在的问题}
+\section{细粒度分类}
+\subsection{细粒度图像分类定义}
+\subsection{数据集}
+细粒度分类常用的数据集：CUB-Bird, StandFord Dog, Stanford Car, OxfordFlower, UECFOOD
+\subsection{图像分类方法应用于细粒度分类问题}
+图像分类方法在细粒度分类问题上表现一般
+\subsubsection{传统机器学习方法在细粒度问题上效果很差}
+SIFT+BoW+SVM准确率约10\%。
+\subsubsection{卷积神经网络在细粒度分类问题上的效果不够好}
+AlexNet, VGG等准确率低于70\%。
+
+{\color{red}{ Experiments: AlexNet和VGG在CUB-Bird和Stanford Dog数据集上的表现。}}
+\subsubsection{效果不好的原因}
+（1）细粒度分类图像中具有区分度的信息往往存在于细小的局部；（2）细粒度分类的数据集样本数量太少。
+\subsubsection{fine-tune及数据增强}
+介绍fine-tune及数据增强在细粒度分类问题中的重要性。
+
+{\color{red}{ Experiments: AlexNet和VGG在CUB-Bird和Stanford Dog数据集上经过ImageNet模型fine-tune后的表现。}}
+\subsection{细粒度图像分类的过程}
+获得具有有效信息的局部区域+特征提取+特征表达+分类器
+\subsection{细粒度图像分类的方法}
+\subsubsection{常用的人工标注信息}
+boundingbox，part annotation，segmentation等
+\subsubsection{强监督算法}
+\paragraph{part R-CNN}
+part R-CNN除了用R-CNN做检测之外，还用到了AlexNet做特征提取以及SVM做为分类器，方法比较典型且分类准确率相对较高：在测试集没有标注信息的情况下，获得73.9\%的准确率。
+\paragraph{pose normalization}
+用到了姿态对齐以及提取不同层级特征的方法，且分类准确率最高，在CUB-Bird数据集上，在训练集和测试集都用标注信息的情况下获得85.4\%的准确率（最高）。测试集没有标注信息时的准确率为75.7\%。
+
+\paragraph{Deep LAC}
+将局部定位，对齐，分类集合在一个神经网络中，最终在有BBox标注信息的情况下，在CUB-Bird数据集上获得了80.3\%的准确率。
+\paragraph{其他算法}
+
+part-stack CNN：采用FCN进行局部定位，并用高斯核对特征图去噪，最终在CUB-Bird数据集上，在用了BBox (Bounding Box) 和Parts (Parts Annotation)标注信息时获得了76.2\%的准确率。
+
+Multi-proposal consensus：利用改进的AlexNet提取关键点和区域，并用SVM分类，并用到了BBox标注信息，在CUB-Bird数据集上获得了80.3\%的准确率。
+
+Coarse-to-fine：同时整合多个卷几层特征，由粗到细进行分类，在使用BBox标注信息的情况下，在CUB-Bird数据集上获得83.7\%的准确率。
+\subsubsection{弱监督算法}
+
+\paragraph{空间转换网络}
+用空间转换器完成对前景图像的对齐操作，在CUB-Bird数据集上获得84.1\%的准确率。
+
+\paragraph{B-CNN}
+在只有标签的情况下，在CUB-Bird数据集上分类准确率最高：84.1\%。
+
+\paragraph{Constellations}
+利用了卷积神经网络本身产生的关键点来提取局部区域的信息，并在CUB-Bird数据集上获得了较高的准确率：81\%。
+
+
+\paragraph{其他方法}
+两级注意力算法：关注对象级和局部级的特征，并对特征进行聚类，在CUB-Bird数据集上获得了77.9\%的准确率。
+
+FCAN：用全卷积网络来获得局部信息，也使用了注意力机制，在CUB-Bird数据集上获得较高的准确率82\%，而且对比了有boundingbox的结果83.3\%。
+
+FCN attention：使用FCN网络来定位局部特征，在CUB-Bird数据集上获得了82\%的准确率。
+
+DVAN：同时提取多个重要区域的特征取平均值，在CUB-Bird数据集上获得了79\%的准确率。
+
+Subset Feature Learning：用聚类的方法将视觉上相近的图片聚集到一起，形成K个子集，再用CNN进行分类，在CUB-Bird数据集上分类准确率为77.5\%。
+
+Attention for fine-grained categorization： 将RNN与GoogLeNet结合，在Stanford Dogs 数据集上得到了76.8\%的准确率。
+
+CNN tree：形成树状CNN网络，每次将“干扰项”作为新的子集，重新训练。
+
+\subsection{ 细粒度分类存在的问题和挑战}
+
+\section{实验}
+现已提出的细粒度分类的方法，主要的关注的是以下几个方面：1、针对数据集不大，图片质量不高的数据预处理和模型微调方法；2、针对细粒度分类的有效的局部特征提取的方法；3、对于提取到的特征的处理方法，包括特征选择，降维，特征表示及特征融合。
+
+\subsection{数据增强和模型微调的方法：}
+\subsubsection{{\color{red}{Web Data}}}
+Web Data\cite{webdata}[{\color{GREY}{强监督 }}]方法通过开发网络照片来对CUB-Bird数据集进行扩充，从而提高了分类准确率，这可作为数据增强的一个思路。
+
+\subsubsection{{\color{red}{Webly-supervised}}}
+Webly-supervised\cite{weblysupervised} [{\color{GREY}{强监督 }}]主要和Web Data方法类似，都用到了网页中的图片。该方法将数据集中带有BoundingBox信息和Part Landmarks信息的图片和网页上的没有这些信息的图片很好的结合，提高了准确率。这也是数据增强的一个思路。
+
+\subsubsection{{\color{red}{Deep Metric Learning}}}
+DML\cite{DML}[{\color{GREY}{弱监督 }}]方法中介绍了建立数据集的方法，通过GooGle搜索或在一些社交网站上找到后，他们提出了Bootstrapping框架来处理这些数据。该数据获取及处理的方法值得学习，但是本文提出的流形学习模式可先不过多关注。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{局部特征的获取：}
+\subsubsection{{\color{red}{Deep LAC }}}
+Deep LAC\cite{deeplac}[{\color{GREY}{强监督 }}]将定位，对齐和分类集合到一起，重点考虑head和body的局部特征，但是他需要BoundingBox标注信息，而且在有BoundingBox标注信息时，准确率为80.3\%，可先不考虑实验。
+\subsubsection{{\color{red}{partRCNN}}}
+Part-based R-CNNs\cite{partrcnn}[{\color{GREY}{强监督 }}]主要是利用R-CNN算法进行对象和该对象区域的检测，该方法在使用BoundingBox和Part信息的情况下，获得了73.9\%的准确率。R-CNN是局部检测的经典方法，但是分类准确率不高，而且需要的人工标注信息多，可先不考虑实验，但理论要研究清楚。
+\subsubsection{{\color{GREEN}{B-CNN}}}
+B-CNN\cite{BCNN}[{\color{GREY}{弱监督 }}]方法采用两个subnet来分别提取不同的特征，并对特征进行融合，该方法中的子网络的结合方式是准确率提高的重要原因，而且该方法在只有类别表现的情况下，在CUB-Bird数据集上获得了84.1\%的准确率，该方法需要实验。
+\subsubsection{{\color{BLUE}{CNN-tree}}}
+CNN-tree\cite{cnntree} [{\color{GREY}{弱监督 }}]将每次分类后的干扰项挑选出来，打包成不同的子集再重新分类，如此反复，从而形成了树状结构。该方法以top-1 error和top-5 error为评价指标，最终在以AlexNet为基准，在ILSVRC2014数据集上获得了37.19\%的top-1 error和16.23\%的top-5 error。此方法网络结构较为复杂，而且性能提升有限。
+\subsubsection{{\color{GREEN}{FCAN}}}
+FCAN\cite{FCAN}[{\color{GREY}{弱监督 }}]方法用全卷积网络来做特征提取，用softmax做分类，在CUB-Bird上有BBox信息时得到了84.3\%的准确率，在仅用标签信息时获得了82\%的准确率。此方法还考虑到了注意力机制，值得关注。
+\subsubsection{{\color{BLUE}{Multi-proposal Consensus}}}
+Multi-proposal Consensus\cite{mpc}[{\color{GREY}{弱监督 }}]主要在于局部定位和特征提取，并移除掉能见度差的特征点，最后用SVM进行分类，在CUB-Bird的准确率为78.3\%。分类效果一般。
+\subsubsection{{\color{red}{Part-stack CNN}}}
+Part-stack CNN\cite{partstackCNN}[{\color{GREY}{强监督 }}]采用FCN网络进行局部定位，用卷积神经网络提取特征并用高斯核对得到的特征图去噪，最后采用基于对象级和局部级的两通道卷积神经网络进行分类。最终在有BBox标注信息情况下，在CUB-Bird数据集上获得了76.6\%的分类准确率。其局部定位方法值得看，但是最终分类效果一般。
+\subsubsection{{\color{BLUE}{Pose Normalization}}}
+Pose Normalization\cite{posenorm}[{\color{GREY}{强监督 }}]采用改进的聚类算法来对不同层次的局部信息进行姿态对齐操作。在有part和BBox标注信息的情况下，在CUB-Bird数据集上获得了85.4\%的准确率。此方法也是将SVM和CNN结合的很好的例子。
+\subsubsection{{\color{GREEN}{Constellations}}}
+星座算法\cite{xingzuo}[{\color{GREY}{弱监督 }}]主要是用到星座算法对卷积网络提取到的特征中的关键点进行筛选后提取出局部区域，并最终在仅有标签信息的情况下，得到了81\%的准确率。
+\subsubsection{{\color{red}{Two-level Attention}}}
+Two-level Attention\cite{twolevel}[{\color{GREY}{弱监督 }}]模型提出对局部级和对象级分类的方法，但是在只有标签信息的情况下在CUB-Bird数据集上仅得到69.7\%的分类准确率。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{特征处理：}
+\subsubsection{{\color{BLUE}{mixDCNN}}}
+mixDCNN\cite{mixDCNN}[{\color{GREY}{强监督 }}]的方法是将各CNN网络结合，即将卷积神经网络提取到的特征结合。比如AlexNet是将第一层全连接层之后的输出进行聚类，GoogLeNet是将分类前的最后一层进行聚类，从而实现特征的融合。虽然该方法也用到了BoundingBox信息，最高准确率为81.2\%，但是这种特征聚类的方法值得一试。
+\subsubsection{{\color{BLUE}{Part-Based Image Representation}}}
+Part-Based Image Representation\cite{partrepresentation}[{\color{GREY}{弱监督 }}]方法从整张图片中提取局部特征，再从局部特征中选择有用的局部特征，然后将这些特征匹配到全局中进行分类。此方法虽然只获得了78.92\%的准确率，但是这种在深度神经网络中直接进行特征选择的方式值得学习，而且作者也给出了选择比率不同时的效果。
+\subsubsection{{\color{GREEN}{Coarse-to-Fine}}}
+Coarse-to-Fine\cite{coarsetofine} [{\color{GREY}{强监督 }}]是由粗到细的细粒度分类方法，该方法是为了解决最后层卷积层输出的特征图像全局化而忽视了许多细节特征因而不适用细粒度分类问题而提出的，他们将不同卷积层的输出相结合，从而关注到细节特征，在有BBox信息的情况下，在CUB-Bird数据集上获得了83.7\%的准确率。此文发表在2016ICIP上，难度适宜，方法也比较新颖，但是链接结构可能并不是很有效，而且需要BBox标注信息，此方法值得一试。
+\subsubsection{{\color{red}{DVAN}}}
+DVAN\cite{DVAN}[{\color{GREY}{弱监督 }}]用到了LSTM来学习attentiveness and discrimination. 并融合多个区域识别的特征，最终取所有预测结果的平均值，在CUB-Bird上获得79\%的准确率。
+\subsubsection{{\color{BLUE}{Filter-Specific}}}
+Filter-Specific\cite{FS}[{\color{GREY}{弱监督 }}]在最后一层卷积层后面加上了滤波器来处理冗余问题。并且使用了玉米分类的新的数据集，但是他们提出的滤波方法并不是很有效，所以待定。
+\subsubsection{{\color{GREEN}{Transformer Networks}}}
+空间转换网络\cite{spatial}[{\color{GREY}{弱监督 }}]提出了可以嵌入到卷积神经网络中的空间转换模型，通过该模型可以使得feature map具有空间转换能力。该方法不仅在CUB-Bird数据集上实验，也应用于MNIST数据集，最终在仅有标签信息的情况下，在CUB-Bird数据集上获得了84.1\%的准确率。此方法不仅仅适用于细粒度分类问题，对于许多分类数据集都有适用的可能性。
+
+\subsection{其他的改进方法：}
+\bibliography{JinnaCVOutline.bib}
+\end{document}

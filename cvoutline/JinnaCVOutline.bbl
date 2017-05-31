@@ -1,0 +1,123 @@
+\begin{thebibliography}{10}
+
+\bibitem{DML}
+Yin Cui, Feng Zhou, Yuanqing Lin, and Serge Belongie.
+\newblock Fine-grained categorization and dataset bootstrapping using deep
+  metric learning with humans in the loop.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1153--1162, 2016.
+
+\bibitem{mixDCNN}
+ZongYuan Ge, Alex Bewley, Christopher McCool, Peter Corke, Ben Upcroft, and
+  Conrad Sanderson.
+\newblock Fine-grained classification via mixture of deep convolutional neural
+  networks.
+\newblock In {\em Applications of Computer Vision (WACV), 2016 IEEE Winter
+  Conference on}, pages 1--6, 2016.
+
+\bibitem{partstackCNN}
+Shaoli Huang, Zhe Xu, Dacheng Tao, and Ya~Zhang.
+\newblock Part-stacked cnn for fine-grained visual categorization.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2016.
+
+\bibitem{deeplac}
+Di~Lin, Xiaoyong Shen, Cewu Lu, and Jiaya Jia.
+\newblock Deep lac: Deep localization, alignment and classification for
+  fine-grained recognition.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1666--1674, 2015.
+
+\bibitem{BCNN}
+Tsung-Yu Lin, Aruni RoyChowdhury, and Subhransu Maji.
+\newblock Bilinear cnn models for fine-grained visual recognition.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1449--1457, 2015.
+
+\bibitem{FCAN}
+Xiao Liu, Tian Xia, Jiang Wang, Yi~Yang, Feng Zhou, and Yuanqing Lin.
+\newblock Fine-grained recognition with automatic and efficient part attention.
+
+\bibitem{FS}
+Hao Lu, Zhiguo Cao, Yang Xiao, Zhiwen Fang, and Yanjun Zhu.
+\newblock Fine-grained maize cultivar identification using filter-specific
+  convolutional activations.
+\newblock In {\em Image Processing (ICIP), 2016 IEEE International Conference
+  on}, pages 3718--3722. IEEE, 2016.
+
+\bibitem{xingzuo}
+Simon Marcel and Erik Rodner.
+\newblock Neural activation constellations: Unsupervised part model discovery
+  with convolutional networks.
+\newblock {\em ICCV}, pages 1143--1151, 2015.
+
+\bibitem{spatial}
+Jaderberg Max, Simonyan Karen, Zisserman Andrew, and kavukcuoglu koray.
+\newblock Spatial transformer networks.
+\newblock {\em NIPS}, 2015.
+
+\bibitem{mpc}
+Kevin~J Shih, Arun Mallya, Saurabh Singh, and Derek Hoiem.
+\newblock Part localization using multi-proposal consensus for fine-grained
+  categorization.
+\newblock {\em arXiv preprint arXiv:1507.06332}, 2015.
+
+\bibitem{posenorm}
+Branson Steve, Horn Grant, Van, Belongie Serge, and Perona Pietro.
+\newblock Bird species categorization using pose normalized deep convolutional
+  nets.
+\newblock {\em CVPR}, 2014.
+
+\bibitem{twolevel}
+Xiao Tianjun, Xu~Yichong, Yang Kuiyuan, Zhang Jiaxing, Peng Yuxin, and Zhang
+  Zheng.
+\newblock The application of two-level attention models in deep convolutional
+  neural network for fine-grained image classification.
+\newblock {\em CVPR}, pages 842--850, 2015.
+
+\bibitem{coarsetofine}
+Yongzhong Wang, Xu-Yao Zhang, Yanming Zhang, Xinwen Hou, and Cheng-Lin Liu.
+\newblock Exploiting coarse-to-fine mechanism for fine-grained recognition.
+\newblock In {\em Image Processing (ICIP), 2016 IEEE International Conference
+  on}, pages 649--653. IEEE, 2016.
+
+\bibitem{cnntree}
+Zhenhua Wang, Xingxing Wang, and Gang Wang.
+\newblock Learning fine-grained features via a cnn tree for large-scale
+  classification.
+\newblock {\em arXiv preprint arXiv:1511.04534}, 2015.
+
+\bibitem{webdata}
+Zhe Xu, Shaoli Huang, Ya~Zhang, and Dacheng Tao.
+\newblock Augmenting strong supervision using web data for fine-grained
+  categorization.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 2524--2532, 2015.
+
+\bibitem{weblysupervised}
+Zhe Xu, Shaoli Huang, Ya~Zhang, and Dacheng Tao.
+\newblock Webly-supervised fine-grained visual categorization via deep domain
+  adaptation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  2016.
+
+\bibitem{partrcnn}
+Ning Zhang, Jeff Donahue, Ross Girshick, and Trevor Darrell.
+\newblock Part-based r-cnns for fine-grained category detection.
+\newblock In {\em European conference on computer vision}, pages 834--849,
+  2014.
+
+\bibitem{partrepresentation}
+Yu~Zhang, Xiu-Shen Wei, Jianxin Wu, Jianfei Cai, Jiangbo Lu, Viet-Anh Nguyen,
+  and Minh~N Do.
+\newblock Weakly supervised fine-grained categorization with part-based image
+  representation.
+\newblock {\em IEEE Transactions on Image Processing}, pages 1713--1725, 2016.
+
+\bibitem{DVAN}
+Bo~Zhao, Xiao Wu, Jiashi Feng, Qiang Peng, and Shuicheng Yan.
+\newblock Diversified visual attention networks for fine-grained object
+  classification.
+\newblock {\em CoRR}, abs/1606.08572, 2016.
+
+\end{thebibliography}
