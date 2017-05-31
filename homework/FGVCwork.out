@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Evaluation}{}% 2
+\BOOKMARK [1][-]{section.3}{Experimental\040details}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Caffe}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Datasets}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Experiments}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{MLP\040and\040LeNet-5\040on\040MNIST\040dataset}{subsection.3.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.2}{LeNet-5\040on\040CIFAR-10\040dataset}{subsection.3.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.3.3}{CIFAR-10\040net\040on\040CIFAR-10\040dataset}{subsection.3.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.3.4}{AlexNet\040on\040CUB-200-2011}{subsection.3.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{Conclusion}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Submission}{}% 12
