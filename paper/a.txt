@@ -1,0 +1,53 @@
+论文内容概述：
+
+论文1中的内容：
+1、物体分类的应用及意义
+2、难点和挑战
+3、分类数据库
+4、历年Pascal voc算法（关于一些传统分类方法的介绍）
+5、深度学习模型的发展
+6、ImageNet比赛上每年的冠军的模型
+7、深度学习方法存在的问题
+
+图像分类笔记（上）https://zhuanlan.zhihu.com/p/20894041
+1、图像分类的任务
+2、图像输入计算机的形式
+3、计算机视觉中分类问题的挑战
+4、图像分类的流程（输入，学习，评价）
+
+图像分类 http://book.paddlepaddle.org/03.image_classification/
+1、Pascal图像分类方法概览
+2、多个CNN网络的网络结构图以及参考文献（ALexNet,VGG,GoogleNet，Resnet）
+3、常用的数据集（CIFAR，ImageNet，COCO）
+
+Cs231课程相关笔记 https://zhuanlan.zhihu.com/p/21930884
+1、图像分类
+2、卷积神经网络
+
+Cs231视频：http://study.163.com/course/courseMain.htm?courseId=1003223001#/courseDetail
+卷积神经网络推导和实现：http://blog.csdn.net/liuxiabing150/article/details/47185949
+1、前馈推导
+2、反向传播推导
+3、梯度计算
+4、feature map的整合
+
+
+李飞飞TED演讲：http://www.ifanr.com/648667
+细粒度视觉分类的最新进展
+
+专家识别CUB-Bird的准确率约为93%
+
+http://blog.csdn.net/henryczj/article/details/41284201
+1、什么是特征选择
+2、
+
+http://blog.csdn.net/abcjennifer/article/details/7639681
+1、SIFT特征提取的算法；
+2、局部特征的相关概念；
+3、
+
+http://blog.csdn.net/songzitea/article/details/16986423
+SURF算法的计算
+
+http://blog.csdn.net/motianchi/article/details/50851074
+alexnet翻译
